@@ -1,6 +1,6 @@
-import { requestsMock } from "./src/mocks";
-import type {  IObserver, IObserverInput, IRequest, IUnsubscribable } from "./src/types";
-import {HTTP_METHOD, HTTP_STATUS, USER_ROLES} from "./src/types";
+import { requestsMock } from "./mocks";
+import { HTTP_STATUS } from "./types";
+import type {  IObserver, IObserverInput, IUnsubscribable } from "./types";
   
 class Observer<T, E> implements IObserver<T, E> {
     private isUnsubscribed = false;
